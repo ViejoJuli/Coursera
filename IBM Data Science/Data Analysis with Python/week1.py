@@ -14,7 +14,6 @@ df.columns = headers
 
 ###Conection to DB###
 connection = connect("databasename", "username", "pswd")
-
 cursor = connection.cursor()
 cursor.execute("select* from mytable")
 results = cursor.fetchall()
